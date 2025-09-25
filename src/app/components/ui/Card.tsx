@@ -12,14 +12,14 @@ export const Card: React.FC<CardProps> = ({
   padding = "md",
 }) => {
   const paddings = {
-    sm: "p-4",
-    md: "p-6",
-    lg: "p-8",
+    sm: "p-0",
+    md: "p-0",
+    lg: "p-0",
   };
 
   return (
     <div
-      className={`bg-white rounded-lg shadow-md ${paddings[padding]} ${className}`}
+      className={`bg-white rounded-lg border border-gray-200 ${paddings[padding]} ${className}`}
     >
       {children}
     </div>
