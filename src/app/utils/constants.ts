@@ -43,21 +43,21 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     name: "Sarah Smith",
     role: "Patient",
-    avatar: "/images/avatar1.jpg",
+    avatar: "/images/man_taking_photo.png",
     content:
       "MedGeneral has revolutionized how I access healthcare. Quick, convenient, and professional.",
   },
   {
     name: "Robert Johnson",
     role: "Senior Patient",
-    avatar: "/images/avatar2.jpg",
+    avatar: "/images/man_taking_photo.png",
     content:
       "The app is so easy to use, and I can consult with my doctor from home.",
   },
   {
     name: "Dr. Emily Davis",
     role: "General Physician",
-    avatar: "/images/avatar3.jpg",
+    avatar: "/images/man_taking_photo.png",
     content:
       "As a healthcare provider, this platform makes it easy to connect with patients.",
   },
