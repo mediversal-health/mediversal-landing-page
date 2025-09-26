@@ -1,27 +1,39 @@
 import React from "react";
+import Image from "next/image";
 
 export const Partners: React.FC = () => {
-  const partners = ["MAX", "APOLLO", "HDFC ERGO", "STAR", "TATA AIG"];
+  const partners = [
+    { name: "MAX", logo: "/images/max.png" },
+    { name: "APOLLO", logo: "/images/apollo.png" },
+    { name: "HDFC ERGO", logo: "/images/hdfc.png" },
+    { name: "STAR", logo: "/images/star.png" },
+  ];
 
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+        <div className="text-start mb-12">
+          <h2 className="text-3xl font-medium text-gray-900 mb-4">
             Partners & Insurers
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-[14px] text-gray-600">
             Trusted by leading healthcare providers and insurance companies
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
           {partners.map((partner, index) => (
             <div
               key={index}
-              className="h-16 bg-gray-100 rounded-lg flex items-center justify-center hover:shadow-md transition-shadow duration-300"
+              className=" rounded-lg flex items-center justify-center  p-2"
             >
-              <span className="font-bold text-gray-600">{partner}</span>
+              <Image
+                src={partner.logo}
+                alt={partner.name}
+                width={120}
+                height={50}
+                className="object-contain"
+              />
             </div>
           ))}
         </div>

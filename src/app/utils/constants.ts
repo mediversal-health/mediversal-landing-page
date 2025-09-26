@@ -1,10 +1,4 @@
-import {
-  AppFeature,
-  Testimonial,
-  VideoTestimonial,
-  Service,
-  FAQ,
-} from "../types";
+import { AppFeature, Testimonial, Service, FAQ } from "../types";
 
 export const APP_FEATURES: AppFeature[] = [
   {
