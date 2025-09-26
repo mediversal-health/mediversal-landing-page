@@ -1,6 +1,5 @@
 import React from "react";
-import { Card } from "../ui/Card";
-import { Button } from "../ui/Button";
+import { ServiceCard } from "../ui/ServiceCard";
 import { SERVICES } from "../../utils/constants";
 
 export const Services: React.FC = () => {
@@ -18,23 +17,13 @@ export const Services: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {SERVICES.map((service, index) => (
-            <Card
+            <ServiceCard
               key={index}
-              className="hover:shadow-lg transition-shadow duration-300"
-            >
-              <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg mb-4 flex items-center justify-center">
-                <span className="text-blue-600 font-medium">
-                  {service.title}
-                </span>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                {service.title}
-              </h3>
-              <p className="text-gray-600 mb-4">{service.description}</p>
-              <Button variant="outline" className="w-full">
-                Learn More
-              </Button>
-            </Card>
+              image={service.image}
+              title={service.title}
+              subtitle={service.description}
+              price={service.price}
+            />
           ))}
         </div>
       </div>

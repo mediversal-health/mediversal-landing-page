@@ -100,7 +100,7 @@ export const SERVICES: Service[] = [
   {
     title: "Doctor Consultation",
     description: "Video or in-person",
-    image: "/images/doctor-consultation.jpg",
+    image: "/images/second.png",
     price: "₹399",
     videoOption: true,
     inPersonOption: true,
@@ -108,7 +108,7 @@ export const SERVICES: Service[] = [
   {
     title: "Specialist Consultation",
     description: "Expert medical advice",
-    image: "/images/specialist-consultation.jpg",
+    image: "/images/second.png",
     price: "₹699",
     videoOption: true,
     inPersonOption: true,
@@ -116,28 +116,28 @@ export const SERVICES: Service[] = [
   {
     title: "Lab Tests",
     description: "Comprehensive diagnostics",
-    image: "/images/lab-tests.jpg",
+    image: "/images/second.png",
     price: "₹299",
     inPersonOption: true,
   },
   {
     title: "Health Checkup",
     description: "Complete body examination",
-    image: "/images/health-checkup.jpg",
+    image: "/images/second.png",
     price: "₹1,499",
     inPersonOption: true,
   },
   {
     title: "Mental Health",
     description: "Counseling & therapy",
-    image: "/images/mental-health.jpg",
+    image: "/images/second.png",
     price: "₹599",
     videoOption: true,
   },
   {
     title: "Pharmacy",
     description: "Medicine delivery",
-    image: "/images/pharmacy.jpg",
+    image: "/images/second.png",
     price: "₹50",
   },
 ];
