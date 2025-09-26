@@ -16,15 +16,6 @@ export const GetApp: React.FC = () => {
               Available on all platforms.
             </p>
 
-            {/* <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1"
-              />
-              <Button>Send Link</Button>
-            </div> */}
-
             <div className="flex flex-col sm:flex-row gap-4">
               <div className="flex items-center gap-2 border border-gray-500 rounded-lg px-4 py-2 hover:shadow-md transition">
                 <Apple className="h-6 w-6 text-gray-800" />
@@ -41,7 +32,7 @@ export const GetApp: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col items-end gap-2">
             <Image
               src={"/images/OR.png"}
               height={200}

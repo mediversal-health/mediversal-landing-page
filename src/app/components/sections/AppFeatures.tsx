@@ -15,8 +15,8 @@ export const AppFeatures: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {APP_FEATURES.map((feature, index) => (
-            <Card key={index} className="hover:shadow-lg duration-300">
-              <div className="flex items-center gap-4">
+            <Card key={index}>
+              <div className="flex items-center gap-4 border rounded-xl p-0.5 border-gray-300">
                 <div className="w-1/3 flex-shrink-0">
                   <Image
                     src={feature.image}

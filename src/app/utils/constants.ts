@@ -2,34 +2,34 @@ import { AppFeature, Testimonial, Service, FAQ } from "../types";
 
 export const APP_FEATURES: AppFeature[] = [
   {
-    title: "Video Consultation",
-    description: "Connect with doctors via video calls",
-    image: "/images/first.png",
-  },
-  {
-    title: "Digital Prescription",
-    description: "Get digital prescriptions instantly",
-    image: "/images/second.png",
-  },
-  {
-    title: "Lab Results",
-    description: "View your lab results online",
-    image: "/images/third.png",
-  },
-  {
-    title: "Appointment Booking",
-    description: "Book appointments with ease",
-    image: "/images/fourth.png",
-  },
-  {
-    title: "Medicine Delivery",
-    description: "Get medicines delivered to your door",
+    title: "Order Medicines",
+    description: "Rx upload | Genuine meds",
     image: "/images/fifth.png",
   },
   {
-    title: "Health Records",
-    description: "Access your complete health records",
-    image: "/images/sixth.png",
+    title: "Book Lab Tests",
+    description: "Book trusted tests with accurate results and quick reports",
+    image: "/images/seventh.png",
+  },
+  {
+    title: "Consult Doctor",
+    description: "Doctors at your fingertip",
+    image: "/images/second.png",
+  },
+  {
+    title: "Homecare Visit",
+    description: "Affordable medical care at home",
+    image: "/images/third.png",
+  },
+  {
+    title: "Elder Care",
+    description: "Personalized Support for Aging Loved Ones",
+    image: "/images/fourth.png",
+  },
+  {
+    title: "Plan Surgery",
+    description: "Expert Surgical Care with Trusted Experts",
+    image: "/images/first.png",
   },
 ];
 
@@ -100,9 +100,9 @@ export const SERVICES: Service[] = [
     inPersonOption: true,
   },
   {
-    title: "Specialist Consultation",
+    title: "Homecare Visit",
     description: "Expert medical advice",
-    image: "/images/second.png",
+    image: "/images/third.png",
     price: "₹699",
     videoOption: true,
     inPersonOption: true,
@@ -110,28 +110,28 @@ export const SERVICES: Service[] = [
   {
     title: "Lab Tests",
     description: "Comprehensive diagnostics",
-    image: "/images/second.png",
+    image: "/images/seventh.png",
     price: "₹299",
     inPersonOption: true,
   },
   {
-    title: "Health Checkup",
-    description: "Complete body examination",
-    image: "/images/second.png",
-    price: "₹1,499",
+    title: "Medicines",
+    description: "Transparent pricing",
+    image: "/images/fifth.png",
+    price: "₹10",
     inPersonOption: true,
   },
   {
-    title: "Mental Health",
-    description: "Counseling & therapy",
-    image: "/images/second.png",
+    title: "Elder Care",
+    description: "Monthly Program",
+    image: "/images/fourth.png",
     price: "₹599",
     videoOption: true,
   },
   {
-    title: "Pharmacy",
-    description: "Medicine delivery",
-    image: "/images/second.png",
+    title: "Surgery Support",
+    description: "Cashless Help",
+    image: "/images/first.png",
     price: "₹50",
   },
 ];
