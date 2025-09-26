@@ -21,6 +21,9 @@ export interface Service {
   title: string;
   description: string;
   image: string;
+  price: string;
+  videoOption?: boolean;
+  inPersonOption?: boolean;
 }
 
 export interface FAQ {

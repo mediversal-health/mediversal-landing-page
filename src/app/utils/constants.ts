@@ -98,34 +98,47 @@ export const VIDEO_TESTIMONIALS = [
 
 export const SERVICES: Service[] = [
   {
-    title: "General Consultation",
-    description: "Connect with experienced general practitioners",
-    image: "/images/general-consultation.jpg",
+    title: "Doctor Consultation",
+    description: "Video or in-person",
+    image: "/images/doctor-consultation.jpg",
+    price: "₹399",
+    videoOption: true,
+    inPersonOption: true,
+  },
+  {
+    title: "Specialist Consultation",
+    description: "Expert medical advice",
+    image: "/images/specialist-consultation.jpg",
+    price: "₹699",
+    videoOption: true,
+    inPersonOption: true,
   },
   {
     title: "Lab Tests",
-    description: "Book and track your laboratory tests",
+    description: "Comprehensive diagnostics",
     image: "/images/lab-tests.jpg",
+    price: "₹299",
+    inPersonOption: true,
   },
   {
-    title: "Specialist Care",
-    description: "Access to specialist doctors",
-    image: "/images/specialist-care.jpg",
+    title: "Health Checkup",
+    description: "Complete body examination",
+    image: "/images/health-checkup.jpg",
+    price: "₹1,499",
+    inPersonOption: true,
   },
   {
     title: "Mental Health",
-    description: "Professional mental health support",
+    description: "Counseling & therapy",
     image: "/images/mental-health.jpg",
+    price: "₹599",
+    videoOption: true,
   },
   {
-    title: "Chronic Care",
-    description: "Ongoing care for chronic conditions",
-    image: "/images/chronic-care.jpg",
-  },
-  {
-    title: "Preventive Care",
-    description: "Preventive healthcare services",
-    image: "/images/preventive-care.jpg",
+    title: "Pharmacy",
+    description: "Medicine delivery",
+    image: "/images/pharmacy.jpg",
+    price: "₹50",
   },
 ];
 
