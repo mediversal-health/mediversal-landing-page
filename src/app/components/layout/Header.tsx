@@ -15,14 +15,14 @@ export const Header: React.FC = () => {
           <div className="flex items-center">
             <Image
               src="/images/Mediversal 24_7 logo.png"
-              alt="Logo"
+              alt="Mediversal247"
               width={250}
               height={100}
             />
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-4 items-center">
+          <nav className="hidden md:flex  space-x-4 items-center">
             <a
               href="#"
               className="text-gray-900 hover:text-primary-500 px-3 py-2 text-lg font-medium"

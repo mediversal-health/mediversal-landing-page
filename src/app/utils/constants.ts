@@ -63,21 +63,36 @@ export const TESTIMONIALS: Testimonial[] = [
   },
 ];
 
-export const VIDEO_TESTIMONIALS: VideoTestimonial[] = [
+export const VIDEO_TESTIMONIALS = [
   {
     title: "Patient Success Story",
-    thumbnail: "/images/video1-thumb.jpg",
-    duration: "2:30",
+    url: "https://www.youtube.com/shorts/CGVlU9d8qTE",
+    name: "Priya Sharma",
+    location: "Patna, Bihar",
   },
   {
     title: "Doctor Experience",
-    thumbnail: "/images/video2-thumb.jpg",
-    duration: "1:45",
+    url: "https://www.youtube.com/shorts/g1bbhFg0Njs",
+    name: "Priya Sharma",
+    location: "Patna, Bihar",
   },
   {
     title: "Family Healthcare",
-    thumbnail: "/images/video3-thumb.jpg",
-    duration: "3:15",
+    url: "https://youtube.com/shorts/YbbswlVAdIc?si=ljxNspECwxmSPq9w",
+    name: "Priya Sharma",
+    location: "Patna, Bihar",
+  },
+  {
+    title: "Family Healthcare",
+    url: "https://youtube.com/shorts/YbbswlVAdIc?si=ljxNspECwxmSPq9w",
+    name: "Priya Sharma",
+    location: "Patna, Bihar",
+  },
+  {
+    title: "Patient Testimonial 1",
+    url: "https://youtube.com/shorts/YbbswlVAdIc?si=ljxNspECwxmSPq9w",
+    name: "Priya Sharma",
+    location: "Patna, Bihar",
   },
 ];
 
