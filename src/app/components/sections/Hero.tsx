@@ -64,7 +64,7 @@ export const Hero: React.FC = () => {
           {/* Right Content - Phone Mockup */}
           <div className="flex justify-center lg:justify-end">
             <Image
-              src="/images/sixth.png"
+              src="/images/phone.svg"
               alt="Phone Mockup"
               width={400}
               height={600}

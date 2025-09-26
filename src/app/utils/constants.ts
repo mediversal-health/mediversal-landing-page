@@ -4,32 +4,32 @@ export const APP_FEATURES: AppFeature[] = [
   {
     title: "Order Medicines",
     description: "Rx upload | Genuine meds",
-    image: "/images/fifth.png",
+    image: "/images/fifth.svg",
   },
   {
     title: "Book Lab Tests",
     description: "Book trusted tests with accurate results and quick reports",
-    image: "/images/seventh.png",
+    image: "/images/seventh.svg",
   },
   {
     title: "Consult Doctor",
     description: "Doctors at your fingertip",
-    image: "/images/second.png",
+    image: "/images/second.svg",
   },
   {
     title: "Homecare Visit",
     description: "Affordable medical care at home",
-    image: "/images/third.png",
+    image: "/images/third.svg",
   },
   {
     title: "Elder Care",
     description: "Personalized Support for Aging Loved Ones",
-    image: "/images/fourth.png",
+    image: "/images/fourth.svg",
   },
   {
     title: "Plan Surgery",
     description: "Expert Surgical Care with Trusted Experts",
-    image: "/images/first.png",
+    image: "/images/first.svg",
   },
 ];
 
@@ -94,7 +94,7 @@ export const SERVICES: Service[] = [
   {
     title: "Doctor Consultation",
     description: "Video or in-person",
-    image: "/images/second.png",
+    image: "/images/second.svg",
     price: "₹399",
     videoOption: true,
     inPersonOption: true,
@@ -102,7 +102,7 @@ export const SERVICES: Service[] = [
   {
     title: "Homecare Visit",
     description: "Expert medical advice",
-    image: "/images/third.png",
+    image: "/images/third.svg",
     price: "₹699",
     videoOption: true,
     inPersonOption: true,
@@ -110,28 +110,28 @@ export const SERVICES: Service[] = [
   {
     title: "Lab Tests",
     description: "Comprehensive diagnostics",
-    image: "/images/seventh.png",
+    image: "/images/seventh.svg",
     price: "₹299",
     inPersonOption: true,
   },
   {
     title: "Medicines",
     description: "Transparent pricing",
-    image: "/images/fifth.png",
+    image: "/images/fifth.svg",
     price: "₹10",
     inPersonOption: true,
   },
   {
     title: "Elder Care",
     description: "Monthly Program",
-    image: "/images/fourth.png",
+    image: "/images/fourth.svg",
     price: "₹599",
     videoOption: true,
   },
   {
     title: "Surgery Support",
     description: "Cashless Help",
-    image: "/images/first.png",
+    image: "/images/first.svg",
     price: "₹50",
   },
 ];

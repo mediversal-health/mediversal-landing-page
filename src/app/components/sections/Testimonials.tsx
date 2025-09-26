@@ -9,7 +9,7 @@ export const Testimonials: React.FC = () => {
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-start mb-12">
-          <h2 className="text-3xl font-medium text-gray-900 mb-4">
+          <h2 className="text-3xl font-light text-gray-900 mb-4">
             What our customers say
           </h2>
           <p className="text-[14px] text-gray-600">

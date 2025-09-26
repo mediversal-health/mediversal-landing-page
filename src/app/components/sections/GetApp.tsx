@@ -8,7 +8,7 @@ export const GetApp: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-medium text-gray-900 mb-2">
+            <h2 className="text-3xl font-light text-gray-900 mb-2">
               Get the app instantly
             </h2>
             <p className="text-gray-600 mb-8 text-[14px]">
@@ -34,7 +34,7 @@ export const GetApp: React.FC = () => {
 
           <div className="flex flex-col items-end gap-2">
             <Image
-              src={"/images/OR.png"}
+              src={"/images/QR.svg"}
               height={200}
               width={200}
               alt="QR Code"

@@ -3,17 +3,17 @@ import Image from "next/image";
 
 export const Partners: React.FC = () => {
   const partners = [
-    { name: "MAX", logo: "/images/max.png" },
-    { name: "APOLLO", logo: "/images/apollo.png" },
-    { name: "HDFC ERGO", logo: "/images/hdfc.png" },
-    { name: "STAR", logo: "/images/star.png" },
+    { name: "MAX", logo: "/images/max.svg" },
+    { name: "APOLLO", logo: "/images/apollo.svg" },
+    { name: "HDFC ERGO", logo: "/images/hdfc.svg" },
+    { name: "STAR", logo: "/images/star.svg" },
   ];
 
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-start mb-12">
-          <h2 className="text-3xl font-medium text-gray-900 mb-4">
+          <h2 className="text-3xl font-light text-gray-900 mb-4">
             Partners & Insurers
           </h2>
           <p className="text-[14px] text-gray-600">

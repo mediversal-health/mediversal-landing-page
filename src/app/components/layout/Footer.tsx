@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
-              <div className="bg-gray-100 p-2 rounded-lg flex items-center justify-center">
+              <div className="shadow-amber-50/25 shadow p-2 rounded-lg flex items-center justify-center">
                 <Image
                   src="/images/Mediversal 24_7 logo.png"
                   alt="Logo"

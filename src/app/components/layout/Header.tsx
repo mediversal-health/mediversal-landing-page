@@ -13,7 +13,7 @@ export const Header: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Image
-              src="/images/Mediversal 24_7 logo.png"
+              src="/images/main_logo.svg"
               alt="Mediversal247"
               width={250}
               height={100}
