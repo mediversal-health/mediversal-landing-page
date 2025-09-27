@@ -2,19 +2,10 @@
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
 import { VIDEO_TESTIMONIALS } from "../../utils/constants";
-import { Play, ChevronLeft, ChevronRight, MapPin } from "lucide-react";
+import { Play, MapPin } from "lucide-react";
 
 export const VideoTestimonials: React.FC = () => {
   const scrollRef = React.useRef<HTMLDivElement>(null);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(true);
-
-  const handleScroll = () => {
-    const el = scrollRef.current;
-    if (!el) return;
-    setCanScrollLeft(el.scrollLeft > 0);
-    setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth);
-  };
 
   return (
     <section className="py-16 bg-gray-50">
@@ -25,38 +16,13 @@ export const VideoTestimonials: React.FC = () => {
           </h2>
         </div>
 
-        <div className="relative">
-          {canScrollLeft && (
-            <button
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-shadow"
-              onClick={() =>
-                scrollRef.current?.scrollBy({ left: -300, behavior: "smooth" })
-              }
-            >
-              <ChevronLeft color="black" size={24} />
-            </button>
-          )}
-
-          <div
-            ref={scrollRef}
-            onScroll={handleScroll}
-            className="flex space-x-6 overflow-x-auto scrollbar-hide py-4"
-          >
-            {VIDEO_TESTIMONIALS.map((video, index) => (
-              <VideoCard key={index} video={video} />
-            ))}
-          </div>
-
-          {canScrollRight && (
-            <button
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-shadow"
-              onClick={() =>
-                scrollRef.current?.scrollBy({ left: 300, behavior: "smooth" })
-              }
-            >
-              <ChevronRight color="black" size={24} />
-            </button>
-          )}
+        <div
+          ref={scrollRef}
+          className="flex space-x-6 overflow-x-auto scrollbar-hide py-4 cursor-grab active:cursor-grabbing"
+        >
+          {VIDEO_TESTIMONIALS.map((video, index) => (
+            <VideoCard key={index} video={video} />
+          ))}
         </div>
       </div>
     </section>
@@ -77,8 +43,8 @@ const VideoCard: React.FC<VideoCardProps> = ({ video }) => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <div className="flex-shrink-0 group cursor-pointer">
-      <div className="relative w-80 h-96 rounded-2xl overflow-hidden bg-gradient-to-br from-gray-200 to-gray-300 shadow-lg hover:shadow-xl transition-all duration-300">
+    <div className="flex-shrink-0 w-80 cursor-pointer">
+      <div className="relative h-[450px] border-gray-300 border-2 rounded-2xl overflow-hidden ">
         {/* Video Player */}
         <ReactPlayer
           src={video.url}
@@ -92,41 +58,38 @@ const VideoCard: React.FC<VideoCardProps> = ({ video }) => {
           onEnded={() => setIsPlaying(false)}
         />
 
-        {/* Overlay Content */}
+        {/* Overlay when not playing */}
         {!isPlaying && (
           <>
-            {/* Play Button */}
+            {/* Play button */}
             <div className="absolute inset-0 flex items-center justify-center">
               <button
                 onClick={() => setIsPlaying(true)}
-                className="w-16 h-16 flex items-center justify-center"
+                className="w-16 h-16 flex items-center justify-center rounded-full bg-white/80 hover:bg-white shadow-lg"
               >
-                <Play size={4} className="text-gray-800" />
+                <Play size={36} className="text-gray-900" />
               </button>
             </div>
 
-            {/* Bottom Gradient Overlay */}
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent p-6">
-              {/* User Info */}
-              <div className="text-white">
-                <h3 className="text-xl font-semibold mb-1">
-                  {video.name || video.title}
-                </h3>
-                {video.location && (
-                  <div className="flex items-center text-sm text-white/90 mb-2">
-                    <MapPin size={14} className="mr-1" />
-                    <span>{video.location}</span>
-                  </div>
-                )}
-              </div>
+            {/* Bottom details */}
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-6">
+              <h3 className="text-white text-lg font-semibold">
+                {video.name || video.title}
+              </h3>
+              {video.location && (
+                <div className="flex items-center text-sm text-white/90">
+                  <MapPin size={14} className="mr-1" />
+                  <span>{video.location}</span>
+                </div>
+              )}
+              {video.description && (
+                <p className="text-sm text-white/80 mt-1">
+                  {video.description}
+                </p>
+              )}
             </div>
           </>
         )}
-      </div>
-
-      {/* Description below video */}
-      <div className="mt-4 px-2">
-        <p className="text-gray-700 font-medium"></p>
       </div>
     </div>
   );
