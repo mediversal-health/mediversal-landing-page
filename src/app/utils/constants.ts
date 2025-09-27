@@ -35,58 +35,56 @@ export const APP_FEATURES: AppFeature[] = [
 
 export const TESTIMONIALS: Testimonial[] = [
   {
-    name: "Sarah Smith",
+    name: "Rohit Sharma",
     role: "Patient",
     avatar: "/images/man_taking_photo.png",
     content:
-      "MedGeneral has revolutionized how I access healthcare. Quick, convenient, and professional.",
+      "The doctors and staff were very supportive during my treatment. The hospital facilities are clean and well-managed.",
   },
   {
-    name: "Robert Johnson",
-    role: "Senior Patient",
+    name: "Anjali Verma",
+    role: "Patient",
     avatar: "/images/man_taking_photo.png",
     content:
-      "The app is so easy to use, and I can consult with my doctor from home.",
+      "I had a smooth experience from registration to consultation. The waiting time was minimal, and I felt truly cared for.",
   },
   {
-    name: "Dr. Emily Davis",
-    role: "General Physician",
+    name: "Rajesh Kumar",
+    role: "Patient",
     avatar: "/images/man_taking_photo.png",
     content:
-      "As a healthcare provider, this platform makes it easy to connect with patients.",
+      "After my surgery, the follow-up care was excellent. The staff regularly checked on me and ensured my recovery was comfortable.",
   },
 ];
 
 export const VIDEO_TESTIMONIALS = [
   {
     title: "Patient Success Story",
-    url: "https://www.youtube.com/shorts/CGVlU9d8qTE",
-    name: "Priya Sharma",
+    url: "https://youtube.com/shorts/PmOuJOLmlzs?si=2dRhzUKQK6fK6t29",
+    name: "Mediversal Healthcare",
     location: "Patna, Bihar",
+    thumbnail: "/images/women_sit.png",
   },
   {
     title: "Doctor Experience",
-    url: "https://www.youtube.com/shorts/g1bbhFg0Njs",
-    name: "Priya Sharma",
+    url: "https://youtube.com/shorts/bFljiSDGd1Q?si=9y1MHFO4Mg07nrvT",
+    name: "Mediversal Healthcare",
     location: "Patna, Bihar",
+    thumbnail: "/images/women_sit.png",
+  },
+  {
+    title: "Family Healthcare",
+    url: "https://youtube.com/shorts/ZFhGOIUy2Go?si=QFzSV9Iw79TMiBaR",
+    name: "Mediversal Healthcare",
+    location: "Patna, Bihar",
+    thumbnail: "/images/women_sit.png",
   },
   {
     title: "Family Healthcare",
     url: "https://youtube.com/shorts/YbbswlVAdIc?si=ljxNspECwxmSPq9w",
-    name: "Priya Sharma",
+    name: "Mediversal Healthcare",
     location: "Patna, Bihar",
-  },
-  {
-    title: "Family Healthcare",
-    url: "https://youtube.com/shorts/YbbswlVAdIc?si=ljxNspECwxmSPq9w",
-    name: "Priya Sharma",
-    location: "Patna, Bihar",
-  },
-  {
-    title: "Patient Testimonial 1",
-    url: "https://youtube.com/shorts/YbbswlVAdIc?si=ljxNspECwxmSPq9w",
-    name: "Priya Sharma",
-    location: "Patna, Bihar",
+    thumbnail: "/images/women_sit.png",
   },
 ];
 

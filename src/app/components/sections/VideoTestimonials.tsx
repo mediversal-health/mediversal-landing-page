@@ -36,6 +36,7 @@ interface VideoCardProps {
     name?: string;
     location?: string;
     description?: string;
+    thumbnail?: string;
   };
 }
 
@@ -52,7 +53,7 @@ const VideoCard: React.FC<VideoCardProps> = ({ video }) => {
           controls={false}
           width="100%"
           height="100%"
-          light={!isPlaying}
+          light={video.thumbnail || !isPlaying}
           onPlay={() => setIsPlaying(true)}
           onPause={() => setIsPlaying(false)}
           onEnded={() => setIsPlaying(false)}

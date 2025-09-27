@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "../ui/Card";
-import { Star, Quote } from "lucide-react";
+import { Quote } from "lucide-react";
 import { TESTIMONIALS } from "../../utils/constants";
 import Image from "next/image";
 

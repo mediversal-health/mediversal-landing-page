@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Apple, Play } from "lucide-react";
 import Image from "next/image";
@@ -23,7 +24,15 @@ export const GetApp: React.FC = () => {
                   Download on App Store
                 </span>
               </div>
-              <div className="flex items-center gap-2 border border-gray-500 rounded-lg px-4 py-2 hover:shadow-md transition">
+              <div
+                onClick={() =>
+                  window.open(
+                    "https://play.google.com/store/apps/details?id=com.mediversal_app",
+                    "_blank"
+                  )
+                }
+                className="flex items-center gap-2 border border-gray-500 rounded-lg px-4 py-2 hover:shadow-md transition cursor-pointer"
+              >
                 <Play className="h-6 w-6 text-green-600" />
                 <span className="font-medium text-gray-900">
                   Get it on Google Play
@@ -34,7 +43,7 @@ export const GetApp: React.FC = () => {
 
           <div className="flex flex-col items-end gap-2">
             <Image
-              src={"/images/QR.svg"}
+              src={"/images/QR.png"}
               height={200}
               width={200}
               alt="QR Code"
