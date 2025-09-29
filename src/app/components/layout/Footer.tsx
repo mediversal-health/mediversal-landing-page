@@ -5,18 +5,18 @@ import React from "react";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-[#121719] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
-              <div className="shadow-amber-50/25 shadow p-2 rounded-lg flex items-center justify-center sm:w-24">
+              <div className=" p-2 rounded-lg flex items-center justify-center">
                 <Image
                   src="/images/Mediversal 24_7 logo.png"
                   alt="Logo"
-                  height={100}
-                  width={96}
+                  height={150}
+                  width={150}
                   className="w-full h-full object-cover"
                 />
               </div>
