@@ -10,7 +10,7 @@ export const GetApp: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-center lg:text-left">
-            <h2 className="text-3xl sm:text-4xl font-light text-gray-900 mb-2">
+            <h2 className="text-3xl sm:text-4xl font-light text-gray-900 mb-4">
               Get the app instantly
             </h2>
             <p className="text-gray-600 mb-8 text-sm sm:text-base max-w-md mx-auto lg:mx-0">
@@ -18,9 +18,17 @@ export const GetApp: React.FC = () => {
               Available on all platforms.
             </p>
 
-            <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+            <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mb-8">
               {/* App Store */}
-              <div className="flex items-center gap-2 border border-gray-300 rounded-lg px-4 py-2 hover:shadow-md transition w-full sm:w-auto justify-center cursor-pointer">
+              <div
+                onClick={() =>
+                  window.open(
+                    "https://apps.apple.com/in/app/mediversal247/id6747696221",
+                    "_blank"
+                  )
+                }
+                className="flex items-center gap-2 border border-gray-300 rounded-lg px-4 py-2 hover:shadow-md transition w-full sm:w-auto justify-center cursor-pointer"
+              >
                 <Apple className="h-6 w-6 text-gray-800" />
                 <span className="font-medium text-gray-900 text-sm sm:text-base">
                   Download on App Store
@@ -45,18 +53,47 @@ export const GetApp: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Content - QR Code */}
-          <div className="flex flex-col items-center lg:items-end gap-4 mt-8 lg:mt-0">
-            <Image
-              src={"/images/QR.png"}
-              height={180}
-              width={180}
-              alt="QR Code"
-              className="border border-gray-300 rounded-2xl"
-            />
-            <p className="text-sm text-gray-600 text-center lg:text-right">
-              Or scan with your phone camera to get the app
-            </p>
+          {/* Right Content - QR Codes */}
+          <div className="flex justify-center lg:justify-end gap-6 mt-8 lg:mt-0">
+            {/* App Store QR */}
+            <div
+              onClick={() =>
+                window.open(
+                  "https://apps.apple.com/in/app/mediversal247/id6747696221",
+                  "_blank"
+                )
+              }
+              className="cursor-pointer flex flex-col items-center"
+            >
+              <Image
+                src={"/images/QR_Apple.png"}
+                height={180}
+                width={180}
+                alt="App Store QR Code"
+                className="border border-gray-300 rounded-2xl"
+              />
+              <span className="text-sm text-gray-600 mt-2">App Store</span>
+            </div>
+
+            {/* Play Store QR */}
+            <div
+              onClick={() =>
+                window.open(
+                  "https://play.google.com/store/apps/details?id=com.mediversal_app",
+                  "_blank"
+                )
+              }
+              className="cursor-pointer flex flex-col items-center"
+            >
+              <Image
+                src={"/images/QR.png"}
+                height={180}
+                width={180}
+                alt="Google Play QR Code"
+                className="border border-gray-300 rounded-2xl"
+              />
+              <span className="text-sm text-gray-600 mt-2">Google Play</span>
+            </div>
           </div>
         </div>
       </div>
