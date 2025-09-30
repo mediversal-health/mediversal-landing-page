@@ -39,7 +39,7 @@ export const Hero: React.FC = () => {
               <Button
                 variant="brand"
                 size="lg"
-                className="flex items-center justify-center w-full sm:w-auto text-lg sm:text-xl px-8 py-4"
+                className="flex items-center justify-center w-full sm:w-full text-lg sm:text-lg px-8 py-3"
                 onClick={() =>
                   window.open("https://onelink.to/e7vbmn", "_blank")
                 }

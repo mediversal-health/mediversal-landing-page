@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { ArrowRight } from "lucide-react"; // or use a simple arrow SVG
 
 interface FeatureCardProps {
   image: string;
