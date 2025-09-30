@@ -14,7 +14,7 @@ export const Header: React.FC = () => {
           <div className="flex items-center flex-shrink-0">
             <Link href="/">
               <Image
-                src="/images/main_logo.svg"
+                src="/images/Mediversal 24_7 logo.png"
                 alt="Mediversal247"
                 width={200}
                 height={80}
@@ -26,7 +26,11 @@ export const Header: React.FC = () => {
 
           {/* Contact Us Button */}
           <div className="flex items-center mt-2 sm:mt-0">
-            <Link href="https://gwsmediversal.in/contacts" target="_blank">
+            <a
+              href="https://wa.me/9608600380"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button
                 variant="outline"
                 size="sm"
@@ -35,7 +39,7 @@ export const Header: React.FC = () => {
                 <PhoneCallIcon className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                 Contact Us
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
