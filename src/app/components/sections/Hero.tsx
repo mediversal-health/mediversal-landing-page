@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { Button } from "../ui/Button";
-import { MapPin, Star } from "lucide-react";
 import Image from "next/image";
 
 export const Hero: React.FC = () => {
@@ -11,12 +10,6 @@ export const Hero: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="self-start mt-10 lg:mt-14">
-            {/* Live Location Badge */}
-            <div className="bg-red-500 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-medium inline-flex items-center mb-6">
-              <MapPin className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-              We are live in Patna. Same day slots available today
-            </div>
-
             {/* Headline */}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-snug">
               All-in-one healthcare.
@@ -30,49 +23,28 @@ export const Hero: React.FC = () => {
               surgeries, under one trusted ecosystem.
             </p>
 
-            {/* App Store & Ratings */}
+            {/* App Logo */}
             <div className="mb-8">
-              <div className="flex items-center gap-4 mb-4">
-                <Image
-                  src="/images/Mediversal 24_7 logo.png"
-                  alt="App Store"
-                  width={135}
-                  height={40}
-                  className="h-8 sm:h-10"
-                />
-                <div className="flex items-center gap-2">
-                  <span className="text-gray-700 font-semibold text-sm sm:text-base">
-                    4.8
-                  </span>
-                  <div className="flex text-yellow-400">
-                    <Star className="h-4 w-4 fill-current" />
-                    <Star className="h-4 w-4 fill-current" />
-                    <Star className="h-4 w-4 fill-current" />
-                    <Star className="h-4 w-4 fill-current" />
-                    <Star className="h-4 w-4 fill-current" />
-                  </div>
-                  <p className="text-gray-600 text-xs sm:text-sm">
-                    Rated by 100,000+ users
-                  </p>
-                </div>
-              </div>
+              <Image
+                src="/images/Mediversal 24_7 logo.png"
+                alt="App Store"
+                width={150}
+                height={50}
+                className="h-10 sm:h-12"
+              />
             </div>
 
-            {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+            {/* Get The App Button */}
+            <div className="flex">
               <Button
                 variant="brand"
                 size="lg"
-                className="flex items-center justify-center w-full sm:w-auto"
+                className="flex items-center justify-center w-full sm:w-full text-lg sm:text-lg px-8 py-3"
+                onClick={() =>
+                  window.open("https://onelink.to/e7vbmn", "_blank")
+                }
               >
                 Get The App
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="flex items-center justify-center w-full sm:w-auto"
-              >
-                Know More
               </Button>
             </div>
           </div>
