@@ -142,14 +142,17 @@ export const GetApp: React.FC = () => {
           {/* Right Content - QR Code */}
           <div className="flex justify-center lg:justify-end gap-6 mt-0 lg:mt-0">
             {/* App Store QR */}
+            {/* App Store QR */}
             <div className="flex flex-col items-center">
-              <Image
-                src={"/images/QR.svg"}
-                height={200}
-                width={200}
-                alt="App QR Code"
-                className="border border-gray-300 rounded-2xl"
-              />
+              <div className="p-1 rounded-3xl bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
+                <Image
+                  src={"/images/QR.svg"}
+                  height={300}
+                  width={300}
+                  alt="App QR Code"
+                  className="rounded-3xl bg-white"
+                />
+              </div>
               <span className="text-sm text-gray-600 mt-3">
                 Or scan this QR code with your phone camera
               </span>

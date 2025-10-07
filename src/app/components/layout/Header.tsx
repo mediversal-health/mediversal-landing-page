@@ -4,6 +4,7 @@ import { PhoneCallIcon, MessageCircleIcon } from "lucide-react";
 import { Button } from "../ui/Button";
 import Image from "next/image";
 import Link from "next/link";
+import { MdPhone, MdWhatsapp } from "react-icons/md";
 
 export const Header: React.FC = () => {
   return (
@@ -26,7 +27,6 @@ export const Header: React.FC = () => {
 
           {/* Contact Buttons */}
           <div className="flex flex-row items-center gap-2 sm:gap-3 mt-2 sm:mt-0">
-            {/* WhatsApp Button */}
             <a
               href="https://wa.me/9608600380"
               target="_blank"
@@ -35,10 +35,12 @@ export const Header: React.FC = () => {
               <Button
                 variant="outline"
                 size="sm"
-                className="flex items-center justify-center px-2 sm:px-5 py-2"
+                className="flex items-center justify-center px-2 sm:px-5 py-2 border-green-500 text-green-600 hover:bg-green-50 transition"
               >
-                <MessageCircleIcon className="h-5 w-5" />
-                <span className="hidden sm:inline ml-2">WhatsApp</span>
+                <MdWhatsapp className="h-6 w-6 text-green-600" />
+                <span className="hidden sm:inline ml-2 font-medium">
+                  WhatsApp
+                </span>
               </Button>
             </a>
 
@@ -47,10 +49,10 @@ export const Header: React.FC = () => {
               <Button
                 variant="outline"
                 size="sm"
-                className="flex items-center justify-center px-2 sm:px-5 py-2"
+                className="flex items-center justify-center px-2 sm:px-5 py-2 border-blue-500 text-blue-600 hover:bg-blue-50 transition relative"
               >
-                <PhoneCallIcon className="h-5 w-5" />
-                <span className="hidden sm:inline ml-2">Call</span>
+                <MdPhone className="h-6 w-6 text-blue-600 glow-phone" />
+                <span className="hidden sm:inline ml-2 font-medium">Call</span>
               </Button>
             </a>
           </div>

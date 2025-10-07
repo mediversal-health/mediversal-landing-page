@@ -4,6 +4,9 @@ import Image from "next/image";
 import React from "react";
 
 export const Footer: React.FC = () => {
+  const getCurrentYear = () => {
+    return new Date().getFullYear();
+  };
   return (
     <footer className="bg-[#121719] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -95,7 +98,7 @@ export const Footer: React.FC = () => {
         {/* Footer Bottom */}
         <div className="border-t border-gray-800 mt-8 pt-6">
           <p className="text-gray-400 text-sm text-center">
-            © 2024 Mediversal. All rights reserved.
+            © {getCurrentYear()} Mediversal. All rights reserved.
           </p>
         </div>
       </div>

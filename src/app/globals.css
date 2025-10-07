@@ -63,3 +63,36 @@ html {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+@keyframes glowPulse {
+  0% {
+    filter: drop-shadow(0 0 0px #3b82f6);
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 5px #3b82f6);
+    transform: scale(1.1);
+  }
+  100% {
+    filter: drop-shadow(0 0 0px #0562f7);
+    transform: scale(1);
+  }
+}
+
+@keyframes whatsappBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+}
+
+.glow-phone {
+  animation: glowPulse 0.5s ease-in-out infinite;
+}
+
+.bounce-whatsapp {
+  animation: whatsappBounce 1.8s ease-in-out infinite;
+}
