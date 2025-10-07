@@ -66,15 +66,15 @@ html {
 
 @keyframes glowPulse {
   0% {
-    filter: drop-shadow(0 0 0px #3b82f6);
+    filter: drop-shadow(0 0 0px #72d1ee);
     transform: scale(1);
   }
   50% {
-    filter: drop-shadow(0 0 5px #3b82f6);
+    filter: drop-shadow(0 0 5px #0088b1);
     transform: scale(1.1);
   }
   100% {
-    filter: drop-shadow(0 0 0px #0562f7);
+    filter: drop-shadow(0 0 0px #026583);
     transform: scale(1);
   }
 }
@@ -90,7 +90,7 @@ html {
 }
 
 .glow-phone {
-  animation: glowPulse 0.5s ease-in-out infinite;
+  animation: glowPulse 1.5s ease-in-out infinite;
 }
 
 .bounce-whatsapp {

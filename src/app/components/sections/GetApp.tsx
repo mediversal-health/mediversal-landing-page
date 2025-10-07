@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Apple, Play } from "lucide-react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export const GetApp: React.FC = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -144,7 +145,17 @@ export const GetApp: React.FC = () => {
             {/* App Store QR */}
             {/* App Store QR */}
             <div className="flex flex-col items-center">
-              <div className="p-1 rounded-3xl bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
+              <motion.div
+                animate={{
+                  backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                }}
+                transition={{
+                  duration: 6,
+                  ease: "linear",
+                  repeat: Infinity,
+                }}
+                className="p-1 rounded-3xl bg-[length:200%_200%] bg-[#0088b1]"
+              >
                 <Image
                   src={"/images/QR.svg"}
                   height={300}
@@ -152,7 +163,8 @@ export const GetApp: React.FC = () => {
                   alt="App QR Code"
                   className="rounded-3xl bg-white"
                 />
-              </div>
+              </motion.div>
+
               <span className="text-sm text-gray-600 mt-3">
                 Or scan this QR code with your phone camera
               </span>

@@ -49,10 +49,12 @@ export const Header: React.FC = () => {
               <Button
                 variant="outline"
                 size="sm"
-                className="flex items-center justify-center px-2 sm:px-5 py-2 border-blue-500 text-blue-600 hover:bg-blue-50 transition relative"
+                className="flex items-center justify-center px-2 sm:px-5 py-2 border-[#0088b1] hover:bg-blue-50 transition relative"
               >
-                <MdPhone className="h-6 w-6 text-blue-600 glow-phone" />
-                <span className="hidden sm:inline ml-2 font-medium">Call</span>
+                <MdPhone className="h-6 w-6 text-[#0088b1] glow-phone" />
+                <span className="hidden sm:inline ml-2 font-semibold text-[#0088b1]">
+                  Call
+                </span>
               </Button>
             </a>
           </div>
