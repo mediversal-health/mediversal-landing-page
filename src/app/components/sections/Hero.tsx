@@ -5,11 +5,11 @@ import Image from "next/image";
 
 export const Hero: React.FC = () => {
   return (
-    <section className="bg-gradient-to-br from-[#EBFFFD] to-white py-12 lg:py-20">
+    <section className="bg-gradient-to-br from-[#EBFFFD] to-white py-12 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
-          <div className="self-start mt-10 lg:mt-14">
+          <div className="self-start mt-10 lg:mt-14 text-center lg:text-left flex flex-col items-center lg:items-start">
             {/* Headline */}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-snug">
               All-in-one healthcare.

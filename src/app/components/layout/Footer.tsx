@@ -63,7 +63,7 @@ export const Footer: React.FC = () => {
 
           {/* Support Links */}
           <div className="md:col-span-1 md:ml-auto mt-8 md:mt-0">
-            <h3 className="text-xl sm:text-2xl font-medium uppercase tracking-wider mb-4">
+            <h3 className="text-xl sm:text-2xl font-medium tracking-wider mb-4">
               Support
             </h3>
             <ul className="space-y-2">

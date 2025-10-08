@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { PhoneCallIcon, MessageCircleIcon } from "lucide-react";
 import { Button } from "../ui/Button";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,7 +7,7 @@ import { MdPhone, MdWhatsapp } from "react-icons/md";
 
 export const Header: React.FC = () => {
   return (
-    <header className="bg-white shadow-sm border-b border-gray-200">
+    <header className="bg-white shadow-md border-b border-gray-200 fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap justify-between items-center h-20 sm:h-24">
           {/* Logo */}

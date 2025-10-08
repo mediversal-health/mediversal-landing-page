@@ -35,7 +35,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
           <h3 className="text-lg font-semibold relative z-10">{title}</h3>
           <p className="text-sm text-gray-200 relative z-10">{subtitle}</p>
           <p className="mt-2 text-base font-medium relative z-10">
-            starting from <span className="text-xl font-bold">₹{price}</span>
+            starting from <span className="text-xl font-bold">{price}</span>
           </p>
         </div>
       </div>
