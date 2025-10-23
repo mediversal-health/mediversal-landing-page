@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { ClarityInitializer } from "./components/ClarityInitializer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -20,6 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <ClarityInitializer />
       <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );
