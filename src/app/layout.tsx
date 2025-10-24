@@ -24,8 +24,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
         {children}
-
-        {/* ✅ Google Analytics */}
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-L5ZZRN2DY1"
