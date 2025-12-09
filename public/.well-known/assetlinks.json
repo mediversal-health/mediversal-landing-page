@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.mediversal_app",
+      "sha256_cert_fingerprints": [
+        "32:11:0F:66:27:F2:A0:29:F2:11:B0:19:43:36:4F:BE:D0:36:D2:61:8D:93:5B:07:B5:C0:67:B3:1D:98:D4:7F"
+      ]
+    }
+  }
+]
