@@ -151,10 +151,10 @@ export default function RiderPrivacyPolicyPage() {
               <p className="text-gray-700">
                 Email:{" "}
                 <a
-                  href="mailto:support@mediversal.com"
+                  href="mailto:gws@mediversal.in"
                   className="text-[#0088B1] hover:underline font-medium"
                 >
-                  support@mediversal.com
+                  gws@mediversal.in
                 </a>
               </p>
             </div>
