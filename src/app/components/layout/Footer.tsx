@@ -24,6 +24,10 @@ export const Footer: React.FC = () => {
                 />
               </div>
             </div>
+            <p className="mt-2 text-sm font-semibold text-white text-left py-2">
+              Mediversal247
+            </p>
+
             <p className="text-gray-400 mb-4 max-w-md text-sm sm:text-base">
               Your trusted healthcare companion. Access quality healthcare
               anytime, anywhere with our comprehensive telemedicine platform.
