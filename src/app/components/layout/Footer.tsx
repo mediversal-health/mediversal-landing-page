@@ -98,7 +98,11 @@ export const Footer: React.FC = () => {
         {/* Footer Bottom */}
         <div className="border-t border-gray-800 mt-8 pt-6">
           <p className="text-gray-400 text-sm text-center">
-            © {getCurrentYear()} Mediversal. All rights reserved.
+            © {getCurrentYear()}{" "}
+            <span className="font-medium">Mediversal247</span>
+            <span className="block text-xs mt-1">
+              Mediversal Healthcare Pvt Ltd
+            </span>
           </p>
         </div>
       </div>

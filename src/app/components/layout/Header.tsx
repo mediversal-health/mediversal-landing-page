@@ -26,7 +26,7 @@ export const Header: React.FC = () => {
 
           {/* Contact Buttons */}
           <div className="flex flex-row items-center gap-2 sm:gap-3 mt-2 sm:mt-0">
-            <a
+            {/* <a
               href="https://wa.me/9608600380"
               target="_blank"
               rel="noopener noreferrer"
@@ -41,7 +41,7 @@ export const Header: React.FC = () => {
                   WhatsApp
                 </span>
               </Button>
-            </a>
+            </a> */}
 
             {/* Call Button */}
             <a href="tel:9608600380">
