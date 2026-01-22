@@ -1,5 +1,6 @@
 "use client";
-import { Facebook, Linkedin, Youtube } from "lucide-react";
+
+import { Facebook } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
@@ -29,8 +30,8 @@ export const Footer: React.FC = () => {
             </p>
 
             <p className="text-gray-400 mb-4 max-w-md text-sm sm:text-base">
-              Your trusted healthcare companion. Access quality healthcare
-              anytime, anywhere with our comprehensive telemedicine platform.
+              Comprehensive healthcare services delivered to your doorstep with
+              transparency and care.
             </p>
 
             {/* Social Icons */}
@@ -100,14 +101,47 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Footer Bottom */}
-        <div className="border-t border-gray-800 mt-8 pt-6">
-          <p className="text-gray-400 text-sm text-center">
+        <div className="border-t border-gray-800 mt-8 pt-6 px-6">
+          {/* Footer text */}
+          <p className="text-gray-400 text-sm text-left">
             © {getCurrentYear()}{" "}
-            <span className="font-medium">Mediversal247</span>
-            <span className="block text-xs mt-1">
-              Mediversal Healthcare Pvt Ltd
+            <span className="font-medium">
+              Mediversal247, All rights reserved.
             </span>
           </p>
+          <span className="font-medium text-gray-400 text-sm text-left">
+            Mediversal Healthcare Pvt Ltd
+          </span>
+
+          <div className="flex items-start justify-start mt-10 space-x-2">
+            <Image
+              src="/images/vector-facebook-social-media-icon-illustration_534308-21672 1.svg"
+              alt="Logo"
+              height={24}
+              width={24}
+              className="object-cover"
+            />
+
+            <a
+              href="https://www.facebook.com/mediversal247" // <-- replace with your real page
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="block text-sm font-medium text-gray-400 mt-1">
+                Like us on Facebook
+              </span>
+
+              <div className="p-2 rounded-lg -ml-10 mt-2 flex items-start justify-start">
+                <Image
+                  src="/images/Frame 2147227728 (1).svg"
+                  alt="Logo"
+                  height={220}
+                  width={220}
+                  className="object-cover"
+                />
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
