@@ -1,80 +1,68 @@
 "use client";
-import { Facebook, Linkedin, Youtube } from "lucide-react";
+import { Facebook, Mail } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
 export const Footer: React.FC = () => {
-  const getCurrentYear = () => {
-    return new Date().getFullYear();
-  };
+  const getCurrentYear = () => new Date().getFullYear();
+
   return (
     <footer className="bg-[#121719] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Company Info */}
-          <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center mb-4">
-              <div className=" p-2 rounded-lg flex items-center justify-center">
-                <Image
-                  src="/images/Mediversal 24_7 logo.png"
-                  alt="Logo"
-                  height={150}
-                  width={150}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-            <p className="mt-2 text-sm font-semibold text-white text-left py-2">
-              Mediversal247
-            </p>
+          <div className="md:col-span-2">
+            <Image
+              src="/images/Mediversal 24_7 logo.png"
+              alt="Logo"
+              height={150}
+              width={150}
+              className="object-contain"
+            />
 
-            <p className="text-gray-400 mb-4 max-w-md text-sm sm:text-base">
+            <p className="mt-4 text-sm font-semibold">Mediversal247</p>
+
+            <p className="text-gray-400 mt-2 max-w-md text-sm sm:text-base">
               Your trusted healthcare companion. Access quality healthcare
               anytime, anywhere with our comprehensive telemedicine platform.
             </p>
 
-            {/* Social Icons */}
-            {/* <div className="flex space-x-3 mt-2">
+            {/* Contact Row */}
+            <div className="flex flex-wrap items-center gap-4 mt-6">
+              {/* Email */}
               <a
-                href="#"
-                className="text-gray-400 hover:text-white transition"
-                aria-label="Facebook"
+                href="mailto:info@mediversal247.in"
+                className="flex items-center gap-2 bg-gradient-to-r from-blue-600/10 to-blue-500/5 border border-blue-500/20 px-4 py-2 rounded-lg hover:from-blue-600/20 hover:to-blue-500/10 hover:border-blue-500/30 transition-all duration-300"
               >
-                <div className="bg-gray-700 hover:bg-gray-600 p-2 rounded-full transition">
-                  <Facebook className="h-5 w-5" />
-                </div>
+                <Mail className="w-4 h-4 text-blue-400" />
+                <span className="text-sm sm:text-base font-medium text-white">
+                  info@mediversal247.in
+                </span>
               </a>
+
+              {/* Facebook */}
               <a
-                href="#"
-                className="text-gray-400 hover:text-white transition"
-                aria-label="YouTube"
+                href="https://www.facebook.com/mediversal247"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-gradient-to-r from-blue-500/10 to-indigo-600/5 border border-blue-400/20 px-4 py-2 rounded-lg hover:from-blue-500/20 hover:to-indigo-600/10 hover:border-blue-400/30 transition-all duration-300"
               >
-                <div className="bg-gray-700 hover:bg-gray-600 p-2 rounded-full transition">
-                  <Youtube className="h-5 w-5" />
-                </div>
+                <Facebook className="w-4 h-4 text-blue-500" />
+                <span className="text-sm sm:text-base">
+                  Follow us on Facebook
+                </span>
               </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition"
-                aria-label="LinkedIn"
-              >
-                <div className="bg-gray-700 hover:bg-gray-600 p-2 rounded-full transition">
-                  <Linkedin className="h-5 w-5" />
-                </div>
-              </a>
-            </div> */}
+            </div>
           </div>
 
-          {/* Support Links */}
-          <div className="md:col-span-1 md:ml-auto mt-8 md:mt-0">
-            <h3 className="text-xl sm:text-2xl font-medium tracking-wider mb-4">
-              Support
-            </h3>
-            <ul className="space-y-2">
+          {/* Support */}
+          <div className="md:ml-auto">
+            <h3 className="text-lg sm:text-xl font-medium mb-4">Support</h3>
+            <ul className="space-y-3">
               <li>
                 <a
                   href="https://gwsmediversal.in/contacts"
-                  className="text-gray-400 hover:text-white text-sm sm:text-base transition"
+                  className="text-gray-400 hover:text-white transition"
                 >
                   Contact Us
                 </a>
@@ -82,7 +70,7 @@ export const Footer: React.FC = () => {
               <li>
                 <a
                   href="https://gwsmediversal.in/privacy-policy"
-                  className="text-gray-400 hover:text-white text-sm sm:text-base transition"
+                  className="text-gray-400 hover:text-white transition"
                 >
                   Privacy Policy
                 </a>
@@ -90,7 +78,7 @@ export const Footer: React.FC = () => {
               <li>
                 <a
                   href="https://gwsmediversal.in/term-and-conditions"
-                  className="text-gray-400 hover:text-white text-sm sm:text-base transition"
+                  className="text-gray-400 hover:text-white transition"
                 >
                   Terms of Service
                 </a>
@@ -99,14 +87,14 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Footer Bottom */}
-        <div className="border-t border-gray-800 mt-8 pt-6">
-          <p className="text-gray-400 text-sm text-center">
+        {/* Bottom */}
+        <div className="border-t border-gray-800 mt-10 pt-6 text-center">
+          <p className="text-gray-400 text-sm">
             © {getCurrentYear()}{" "}
-            <span className="font-medium">Mediversal247</span>
-            <span className="block text-xs mt-1">
-              Mediversal Healthcare Pvt Ltd
-            </span>
+            <span className="font-medium text-white">Mediversal247</span>
+          </p>
+          <p className="text-xs text-gray-500 mt-1">
+            Mediversal Healthcare Pvt Ltd
           </p>
         </div>
       </div>
