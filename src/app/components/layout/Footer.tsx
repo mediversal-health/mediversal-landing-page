@@ -94,7 +94,7 @@ export const Footer: React.FC = () => {
             <span className="font-medium text-white">Mediversal247</span>
           </p>
           <p className="text-xs text-gray-500 mt-1">
-            Mediversal Healthcare Pvt Ltd
+            Mediversal Healthcare Private Limited
           </p>
         </div>
       </div>
