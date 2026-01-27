@@ -44,14 +44,14 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     name: "Anjali Verma",
     role: "Patient",
-    avatar: "/images/man_taking_photo.png",
+    avatar: "/images/istockphoto-1145045107-612x612.jpg",
     content:
       "I had a smooth experience from registration to consultation. The waiting time was minimal, and I felt truly cared for.",
   },
   {
     name: "Rajesh Kumar",
     role: "Patient",
-    avatar: "/images/man_taking_photo.png",
+    avatar: "/images/Parikshit+Gokhale-640w.webp",
     content:
       "After my surgery, the follow-up care was excellent. The staff regularly checked on me and ensured my recovery was comfortable.",
   },
@@ -63,28 +63,28 @@ export const VIDEO_TESTIMONIALS = [
     url: "https://youtube.com/shorts/PmOuJOLmlzs?si=2dRhzUKQK6fK6t29",
     name: "Mediversal Healthcare",
     location: "Patna, Bihar",
-    thumbnail: "/images/women_sit.png",
+    thumbnail: "/images/istockphoto-1295918822-612x612.jpg",
   },
   {
     title: "Doctor Experience",
     url: "https://youtube.com/shorts/bFljiSDGd1Q?si=9y1MHFO4Mg07nrvT",
     name: "Mediversal Healthcare",
     location: "Patna, Bihar",
-    thumbnail: "/images/women_sit.png",
+    thumbnail: "/images/istockphoto-1403199883-612x612.jpg",
   },
   {
     title: "Family Healthcare",
     url: "https://youtube.com/shorts/ZFhGOIUy2Go?si=QFzSV9Iw79TMiBaR",
     name: "Mediversal Healthcare",
     location: "Patna, Bihar",
-    thumbnail: "/images/women_sit.png",
+    thumbnail: "/images/istockphoto-1180917233-612x612.jpg",
   },
   {
     title: "Family Healthcare",
     url: "https://youtube.com/shorts/YbbswlVAdIc?si=ljxNspECwxmSPq9w",
     name: "Mediversal Healthcare",
     location: "Patna, Bihar",
-    thumbnail: "/images/women_sit.png",
+    thumbnail: "/images/istockphoto-1418999473-612x612.jpg",
   },
 ];
 
