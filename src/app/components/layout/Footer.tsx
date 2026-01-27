@@ -64,6 +64,8 @@ export const Footer: React.FC = () => {
                   onClick={() =>
                     window.open("https://onelink.to/e7vbmn", "_blank")
                   }
+                <a
+                  href="https://gwsmediversal.in/contacts"
                   className="text-gray-400 hover:text-white transition"
                 >
                   Contact Us
@@ -77,6 +79,8 @@ export const Footer: React.FC = () => {
                       "_blank",
                     )
                   }
+                <a
+                  href="https://gwsmediversal.in/privacy-policy"
                   className="text-gray-400 hover:text-white transition"
                 >
                   Privacy Policy
@@ -90,6 +94,8 @@ export const Footer: React.FC = () => {
                       "_blank",
                     )
                   }
+                <a
+                  href="https://gwsmediversal.in/term-and-conditions"
                   className="text-gray-400 hover:text-white transition"
                 >
                   Terms of Service
