@@ -60,28 +60,40 @@ export const Footer: React.FC = () => {
             <h3 className="text-lg sm:text-xl font-medium mb-4">Support</h3>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="https://gwsmediversal.in/contacts"
+                <button
+                  onClick={() =>
+                    window.open("https://gwsmediversal.in/contacts", "_blank")
+                  }
                   className="text-gray-400 hover:text-white transition"
                 >
                   Contact Us
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="https://gwsmediversal.in/privacy-policy"
+                <button
+                  onClick={() =>
+                    window.open(
+                      "https://gwsmediversal.in/privacy-policy",
+                      "_blank",
+                    )
+                  }
                   className="text-gray-400 hover:text-white transition"
                 >
                   Privacy Policy
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="https://gwsmediversal.in/term-and-conditions"
+                <button
+                  onClick={() =>
+                    window.open(
+                      "https://gwsmediversal.in/term-and-conditions",
+                      "_blank",
+                    )
+                  }
                   className="text-gray-400 hover:text-white transition"
                 >
                   Terms of Service
-                </a>
+                </button>
               </li>
             </ul>
           </div>
