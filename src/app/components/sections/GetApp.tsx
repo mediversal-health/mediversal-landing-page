@@ -25,13 +25,13 @@ export const GetApp: React.FC = () => {
     if (sendViaWhatsApp) {
       // WhatsApp link format
       const whatsappUrl = `https://wa.me/91${cleanedNumber}?text=${encodeURIComponent(
-        message
+        message,
       )}`;
       window.open(whatsappUrl, "_blank");
     } else {
       // SMS link format
       const smsUrl = `sms:+91${cleanedNumber}?body=${encodeURIComponent(
-        message
+        message,
       )}`;
       window.open(smsUrl, "_blank");
     }
@@ -70,7 +70,7 @@ export const GetApp: React.FC = () => {
               </div>
 
               {/* Toggle Switch */}
-              <div className="flex items-center justify-between mb-4 text-sm">
+              <div className="flex items-center justify-between mb-4 text-sm cursor-pointer">
                 <span className="text-gray-600">
                   {sendViaWhatsApp ? "Send via WhatsApp" : "Send via SMS"}
                 </span>
@@ -92,7 +92,7 @@ export const GetApp: React.FC = () => {
               <button
                 onClick={handleSendLink}
                 disabled={isLoading}
-                className="w-full bg-[#0088B1] text-white font-medium py-2 px-6 rounded-lg "
+                className="w-full bg-[#0088B1] text-white font-medium py-2 px-6 rounded-lg cursor-pointer"
               >
                 {isLoading ? "Sending..." : "Send app link"}
               </button>
@@ -108,7 +108,7 @@ export const GetApp: React.FC = () => {
                 onClick={() =>
                   window.open(
                     "https://apps.apple.com/in/app/mediversal247/id6747696221",
-                    "_blank"
+                    "_blank",
                   )
                 }
                 className="flex items-center gap-2  rounded-lg px-2 py-2 w-full sm:w-auto justify-center cursor-pointer"
@@ -125,7 +125,7 @@ export const GetApp: React.FC = () => {
                 onClick={() =>
                   window.open(
                     "https://play.google.com/store/apps/details?id=com.mediversal_app",
-                    "_blank"
+                    "_blank",
                   )
                 }
                 className="flex items-center gap-2 rounded-lg px-2 py-2 w-full sm:w-auto justify-center cursor-pointer"

@@ -36,9 +36,9 @@ export const FAQ: React.FC = () => {
                   {faq.question}
                 </h3>
                 {openIndex === index ? (
-                  <ChevronUp className="h-5 w-5 text-gray-500" />
+                  <ChevronUp className="h-5 w-5 text-gray-500 cursor-pointer" />
                 ) : (
-                  <ChevronDown className="h-5 w-5 text-gray-500" />
+                  <ChevronDown className="h-5 w-5 text-gray-500 cursor-pointer" />
                 )}
               </button>
               {openIndex === index && (
