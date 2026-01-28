@@ -28,9 +28,8 @@ export const Hero: React.FC = () => {
               <Image
                 src="/images/Mediversal 24_7 logo.png"
                 alt="App Store"
-                width={150}
-                height={50}
-                className="h-10 sm:h-12"
+                width={200}
+                height={70}
               />
             </div>
 
@@ -39,7 +38,7 @@ export const Hero: React.FC = () => {
               <Button
                 variant="brand"
                 size="lg"
-                className="flex items-center justify-center w-full sm:w-full text-lg sm:text-lg px-8 py-3"
+                className="flex items-center justify-center w-full sm:w-full text-lg sm:text-lg px-8 py-3 cursor-pointer"
                 onClick={() =>
                   window.open("https://onelink.to/e7vbmn", "_blank")
                 }

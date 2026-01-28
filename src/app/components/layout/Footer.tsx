@@ -64,7 +64,7 @@ export const Footer: React.FC = () => {
                   onClick={() =>
                     window.open("https://gwsmediversal.in/contacts", "_blank")
                   }
-                  className="text-gray-400 hover:text-white transition"
+                  className="text-gray-400 hover:text-white transition cursor-pointer"
                 >
                   Contact Us
                 </button>
@@ -77,7 +77,7 @@ export const Footer: React.FC = () => {
                       "_blank",
                     )
                   }
-                  className="text-gray-400 hover:text-white transition"
+                  className="text-gray-400 hover:text-white transition cursor-pointer"
                 >
                   Privacy Policy
                 </button>
@@ -90,7 +90,7 @@ export const Footer: React.FC = () => {
                       "_blank",
                     )
                   }
-                  className="text-gray-400 hover:text-white transition"
+                  className="text-gray-400 hover:text-white transition cursor-pointer"
                 >
                   Terms of Service
                 </button>
