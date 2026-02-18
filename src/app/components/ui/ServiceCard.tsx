@@ -17,7 +17,6 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
   return (
     <div className="rounded-2xl overflow-hidden shadow bg-white">
       <div className="relative flex h-56">
-        {/* Left image section */}
         <div className="w-1/2 h-full">
           <Image
             src={image}
@@ -28,15 +27,20 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
           />
         </div>
 
-        {/* Right content with diagonal cut */}
-        <div className="w-1/2 bg-[#184C73] text-white flex flex-col justify-center px-6 relative">
-          <div className="absolute left-[-40px] top-0 bottom-0 w-20 bg-[#184C73] transform -skew-x-12"></div>
+        <div className="w-1/2 bg-[#184C73] text-white flex flex-col justify-between px-6 py-6 relative">
+          <div className="absolute left-[-25px] top-0 bottom-0 w-20 bg-[#184C73] transform -skew-x-12"></div>
 
-          <h3 className="text-lg font-semibold relative z-10">{title}</h3>
-          <p className="text-sm text-gray-200 relative z-10">{subtitle}</p>
-          <p className="mt-2 text-base font-medium relative z-10">
-            starting from <span className="text-xl font-bold">{price}</span>
-          </p>
+          <div className="relative z-10">
+            <h3 className="text-xl font-semibold">{title}</h3>
+            <p className="text-base text-[#D3D7D8]">{subtitle}</p>
+          </div>
+
+          <div className="relative z-10">
+            <p className="text-base font-medium text-[#B3DCE8]">
+              Starting from <br />
+              <span className="text-xl font-bold">{price}</span>
+            </p>
+          </div>
         </div>
       </div>
     </div>

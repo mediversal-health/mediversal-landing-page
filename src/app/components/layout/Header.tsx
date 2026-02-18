@@ -10,7 +10,6 @@ export const Header: React.FC = () => {
     <header className="bg-white shadow-md border-b border-gray-200 fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap justify-between items-center h-20 sm:h-24">
-          {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <Link href="/">
               <Image
@@ -24,7 +23,6 @@ export const Header: React.FC = () => {
             </Link>
           </div>
 
-          {/* Contact Buttons */}
           <div className="flex flex-row items-center gap-2 sm:gap-3 mt-2 sm:mt-0">
             {/* <a
               href="https://wa.me/9608600380"
@@ -43,7 +41,6 @@ export const Header: React.FC = () => {
               </Button>
             </a> */}
 
-            {/* Call Button */}
             <a href="tel:9608600380">
               <Button
                 variant="outline"
