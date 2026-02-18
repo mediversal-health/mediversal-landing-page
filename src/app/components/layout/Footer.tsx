@@ -10,7 +10,6 @@ export const Footer: React.FC = () => {
     <footer className="bg-[#121719] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          {/* Company Info */}
           <div className="md:col-span-2">
             <Image
               src="/images/Mediversal 24_7 logo.png"
@@ -27,27 +26,24 @@ export const Footer: React.FC = () => {
               anytime, anywhere with our comprehensive telemedicine platform.
             </p>
 
-            {/* Contact Row */}
             <div className="flex flex-wrap items-center gap-4 mt-6">
-              {/* Email */}
               <a
                 href="mailto:info@mediversal247.in"
                 className="flex items-center gap-2 bg-gradient-to-r from-blue-600/10 to-blue-500/5 border border-blue-500/20 px-4 py-2 rounded-lg hover:from-blue-600/20 hover:to-blue-500/10 hover:border-blue-500/30 transition-all duration-300"
               >
-                <Mail className="w-4 h-4 text-blue-400" />
+                <Mail className="w-4 h-4 text-[#0088b1]" />
                 <span className="text-sm sm:text-base font-medium text-white">
                   info@mediversal247.in
                 </span>
               </a>
 
-              {/* Facebook */}
               <a
                 href="https://www.facebook.com/mediversal247"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-gradient-to-r from-blue-500/10 to-indigo-600/5 border border-blue-400/20 px-4 py-2 rounded-lg hover:from-blue-500/20 hover:to-indigo-600/10 hover:border-blue-400/30 transition-all duration-300"
               >
-                <Facebook className="w-4 h-4 text-blue-500" />
+                <Facebook className="w-4 h-4 text-[#0088b1]" />
                 <span className="text-sm sm:text-base">
                   Follow us on Facebook
                 </span>
@@ -55,7 +51,6 @@ export const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Support */}
           <div className="md:ml-auto">
             <h3 className="text-lg sm:text-xl font-medium mb-4">Support</h3>
             <ul className="space-y-3">
