@@ -26,7 +26,7 @@ export const Hero: React.FC = () => {
             </h1>
 
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-8 max-w-md sm:max-w-lg">
-              Medicines, homecare, doctor consults, lab tests, elder care, and
+              Medicines, homecare, doctor consults, lab tests, elder care and
               surgeries, under one trusted ecosystem.
             </p>
 
